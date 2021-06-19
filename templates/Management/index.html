@@ -1,0 +1,10 @@
+{% extends 'Management/base_layout.html' %}
+{% block title %}
+<title>LMS | Home</title>
+{% endblock %}
+
+{% block content %}
+{% include 'Management/navbar.html' %}
+<h1>Home</h1>
+{{ user.username }}
+{% endblock %}

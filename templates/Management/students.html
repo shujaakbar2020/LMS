@@ -1,0 +1,26 @@
+{% extends 'Management/base_layout.html' %}
+{% load static %}
+
+{% block content %}
+{% include 'Management/navbar.html' %}
+<div class="container">
+    <div class='col-4'>
+        <table class="table table-sm">
+            <tr>
+                <th>Name</th>
+                <th>Admit Year</th>
+                <th>Phone</th>
+                <th>Email</th>
+            </tr>
+            {% for student in students %}
+            <tr>
+                <td>{{student.studentName}}</td>
+                <td>{{student.admitYear}}</td>
+                <td>{{student.mobilePhone}}</td>
+                <td>{{student.emailAddress}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+{% endblock %}

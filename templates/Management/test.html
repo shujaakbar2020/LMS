@@ -1,0 +1,17 @@
+{% extends 'Management/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    {% for student in students %}
+    <div class='col-4'>
+        <div class='box'>
+            <h6 class="test1">{{ student.className }}</h6>
+            <img class="image" src="{% static 'img/img_avatar.png' %}" />
+            <p class="student_percentage">60%</p>
+            <p class="student_marks">60/100</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

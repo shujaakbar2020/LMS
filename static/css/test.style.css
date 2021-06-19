@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body {width:100%; height:100%;}
+.container {
+    padding: 40px 5%;
+    width: 100%;
+    overflow: auto;
+}
+.col-4 {
+    width: calc(100% /3);
+    float: left;
+    padding: 5px .5rem;
+    margin-top: 10px;
+}
+.box {
+    height: 150px;
+    background-color: #aaa;
+    border-radius: 10px;
+    color: white;
+}
+.test1{
+    text-align: center;
+    padding-top: 5%;
+}
+.image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin: 20px;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.student_percentage{
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left: 50px;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+}
+
+.student_marks{
+    position:absolute;
+    bottom:0;
+    right:0;
+    margin-right: 40px;
+    padding: 0px;
+    width: 25px;
+    height: 25px;
+}
